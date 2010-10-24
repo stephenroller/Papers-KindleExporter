@@ -4,7 +4,7 @@ Kindle Exporter is a plugin for [Papers.app](http://mekentosj.com/papers/) desig
 
 ## Download
 
-[KindleExporter.exporter](http://stephenroller.com/static/code/KindleExporter.zip)
+[KindleExporter.exporter](http://stephenroller.com/static/code/KindleExporter.exporter.zip)
 
 ## Installation
 
