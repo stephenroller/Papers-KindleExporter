@@ -17,7 +17,7 @@
 		A664C8FB0B5D824C0033B2B6 /* PapersExporterPluginProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A664C8F70B5D824C0033B2B6 /* PapersExporterPluginProtocol.h */; };
 		A6C5CF830D114ED300542EB3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6C5CF820D114ED300542EB3 /* Localizable.strings */; };
 		DC65B0291273D20700AF934B /* Panel.nib in Resources */ = {isa = PBXBuildFile; fileRef = DC65B0271273D20700AF934B /* Panel.nib */; };
-		DCB7349F1274401800262563 /* JSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCB7348B12743FC300262563 /* JSON.framework */; };
+		DCAEC96912744CB6001976E3 /* JSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCB7348B12743FC300262563 /* JSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DCB7349F1274401800262563 /* JSON.framework in CopyFiles */,
+				DCAEC96912744CB6001976E3 /* JSON.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +519,7 @@
 		A65AD4FC09A4AE9B0061BB58 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				SKIP_INSTALL = YES;
 			};
 			name = Deployment;
