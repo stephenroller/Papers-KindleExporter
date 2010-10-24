@@ -386,7 +386,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = KindleExporter;
@@ -495,7 +495,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = BibTeXExporter;
@@ -537,8 +537,8 @@
 		A65AD4F609A4AE9B0061BB58 /* Build configuration list for PBXNativeTarget "KindleExporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A65AD4F709A4AE9B0061BB58 /* Development */,
 				A65AD4F809A4AE9B0061BB58 /* Deployment */,
+				A65AD4F709A4AE9B0061BB58 /* Development */,
 				A65AD4F909A4AE9B0061BB58 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -547,8 +547,8 @@
 		A65AD4FA09A4AE9B0061BB58 /* Build configuration list for PBXProject "kindleExporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A65AD4FB09A4AE9B0061BB58 /* Development */,
 				A65AD4FC09A4AE9B0061BB58 /* Deployment */,
+				A65AD4FB09A4AE9B0061BB58 /* Development */,
 				A65AD4FD09A4AE9B0061BB58 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
