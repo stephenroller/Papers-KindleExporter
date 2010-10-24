@@ -13,6 +13,6 @@ Place the compiled KindleExporter.exporter in
 
 ## Usage
 
-After installing, select the papers you wish to save to the Kindle and click File -&gt; Export -&gt; Kindle. The files will be saved on your Kindle and
+After installing, select the papers you wish to save to the Kindle and click File -> Export -> Kindle. The files will be saved on your Kindle and
 you may eject your Kindle.
     
