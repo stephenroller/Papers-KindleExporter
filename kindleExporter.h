@@ -1,5 +1,5 @@
 #import <Cocoa/Cocoa.h>
-#import <JSON/JSON.h>
+#import "JSON/Classes/JSON.h"
 #import "PapersExporterPluginProtocol.h"
 
 #define APPEND_KINDLE_PATH @"/documents/Papers/"
