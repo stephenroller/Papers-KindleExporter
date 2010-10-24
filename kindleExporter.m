@@ -307,6 +307,7 @@ NSString* getKindlePath()
 	//NSString *jsonString = [NSString stringWithContentsOfFile:jsonFile encoding:NSASCIIStringEncoding error:&err];
 	
 	//NSDictionary *jsonDict = [jsonString JSONValue];
+	// FIXME: if COLLECTION_NAME doesn't exist, we should create it and items.
 	//NSMutableArray *items = [[jsonDict objectForKey:COLLECTION_NAME] objectForKey:@"items"];
 	
 	
