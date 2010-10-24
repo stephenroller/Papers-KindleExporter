@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>KindleExporter</string>
+	<key>CFBundleIconFile</key>
+	<string>exporter</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.stephenroller.kindleExporter</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleSignature</key>
+	<string>MTPX</string>
+	<key>CFBundleVersion</key>
+	<string>0.1</string>
+	<key>NSMainNibFile</key>
+	<string>Panel.nib</string>
+	<key>NSPrincipalClass</key>
+	<string>KindleExporter</string>
+	<key>PapersAuthorContact</key>
+	<string>me@stephenroller.com</string>
+	<key>PapersAuthorName</key>
+	<string>Stephen Roller</string>
+	<key>PapersAuthorWebsite</key>
+	<string>http://stephenroller.com/</string>
+	<key>PapersMinimumAppVersion</key>
+	<string>0.8</string>
+	<key>PapersMinimumOSVersion</key>
+	<string>10.5</string>
+	<key>PapersPluginCategory</key>
+	<string>General</string>
+	<key>PapersPluginDescription</key>
+	<string>Copies PDF files onto a Kindle</string>
+	<key>PapersPluginName</key>
+	<string>Kindle Exporter</string>
+</dict>
+</plist>

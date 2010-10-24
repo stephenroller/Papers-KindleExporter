@@ -1,0 +1,12 @@
+/Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings|125|warning: Insecure world writable dir /Users/stephen/Desktop/Kindle Exporter/. in PATH, mode 040777
+/Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings|125|warning: Insecure world writable dir /Users/stephen/Desktop/Kindle Exporter/. in PATH, mode 040777
+/Users/stephen/Desktop/Kindle Exporter/kindleExporter.m|218|error: ‘filename’ undeclared (first use in this function)
+/Users/stephen/Desktop/Kindle Exporter/kindleExporter.m|218|error: (Each undeclared identifier is reported only once
+/Users/stephen/Desktop/Kindle Exporter/kindleExporter.m|218|error: for each function it appears in.)
+/Users/stephen/Desktop/Kindle Exporter/kindleExporter.m|220|warning: passing argument 1 of ‘NSLog’ from incompatible pointer type
+/Users/stephen/Desktop/Kindle Exporter/kindleExporter.m|220|warning: format not a string literal and no format arguments
+/Users/stephen/Desktop/Kindle Exporter/kindleExporter.m|218|error: ‘filename’ undeclared (first use in this function)
+/Users/stephen/Desktop/Kindle Exporter/kindleExporter.m|218|error: (Each undeclared identifier is reported only once
+/Users/stephen/Desktop/Kindle Exporter/kindleExporter.m|218|error: for each function it appears in.)
+/Users/stephen/Desktop/Kindle Exporter/kindleExporter.m|220|warning: passing argument 1 of ‘NSLog’ from incompatible pointer type
+/Users/stephen/Desktop/Kindle Exporter/kindleExporter.m|220|warning: format not a string literal and no format arguments
