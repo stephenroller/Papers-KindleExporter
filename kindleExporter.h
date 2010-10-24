@@ -3,7 +3,7 @@
 #import "PapersExporterPluginProtocol.h"
 
 #define APPEND_KINDLE_PATH @"/documents/Papers/"
-#define COLLECTION_NAME @"Papers@en-US"
+#define COLLECTION_NAME @"Papers2@en-US"
 #define KINDLE_LOCAL_PREFIX @"/mnt/us"
 
 

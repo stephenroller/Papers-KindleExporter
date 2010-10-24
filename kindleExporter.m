@@ -303,11 +303,11 @@ NSString* getKindlePath()
 	}
 	
 	// we also have to update the collections json
-	NSString *jsonFile = [kindlePath stringByAppendingPathComponent:@"system/collections.json"];
-	NSString *jsonString = [NSString stringWithContentsOfFile:jsonFile encoding:NSASCIIStringEncoding error:&err];
+	//NSString *jsonFile = [kindlePath stringByAppendingPathComponent:@"system/collections.json"];
+	//NSString *jsonString = [NSString stringWithContentsOfFile:jsonFile encoding:NSASCIIStringEncoding error:&err];
 	
-	NSDictionary *jsonDict = [jsonString JSONValue];
-	NSMutableArray *items = [[jsonDict objectForKey:COLLECTION_NAME] objectForKey:@"items"];
+	//NSDictionary *jsonDict = [jsonString JSONValue];
+	//NSMutableArray *items = [[jsonDict objectForKey:COLLECTION_NAME] objectForKey:@"items"];
 	
 	
 	// Iterate over each paper
@@ -327,10 +327,9 @@ NSString* getKindlePath()
 		NSString *kindleFilename = [KINDLE_LOCAL_PREFIX stringByAppendingPathComponent:APPEND_KINDLE_PATH];
 		kindleFilename = [kindleFilename stringByAppendingPathComponent:[filePath lastPathComponent]];
 		NSLog(@"kindle filename: %@", kindleFilename);
-		NSString *hash = [@"*" stringByAppendingString:[self sha1hash:kindleFilename]];
-		NSLog(@"Hash: %@...", hash);
-		[items removeObject:hash];
-		[items addObject:hash];
+		//NSString *hash = [@"*" stringByAppendingString:[self sha1hash:kindleFilename]];
+		//[items removeObject:hash];
+		//[items addObject:hash];
 		
 		
 		// should we continue?
@@ -348,12 +347,12 @@ NSString* getKindlePath()
 		
 	}
 	
-	[[jsonDict objectForKey:COLLECTION_NAME] setObject:items forKey:@"items"];
+	//[[jsonDict objectForKey:COLLECTION_NAME] setObject:items forKey:@"items"];
 	
-	[[jsonDict JSONRepresentation] writeToFile:jsonFile 
-									atomically:YES 
-									  encoding:NSASCIIStringEncoding
-										 error:&err];
+	//[[jsonDict JSONRepresentation] writeToFile:jsonFile 
+	//								atomically:YES 
+	//								  encoding:NSASCIIStringEncoding
+	//									 error:&err];
 	
 	
 	if(err) {
