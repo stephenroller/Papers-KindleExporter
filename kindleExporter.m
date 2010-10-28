@@ -185,24 +185,36 @@ NSString* getKindlePath()
 {
 	NSString *kindlePath = nil;
 	
-	NSArray *resourceKeys = [NSArray arrayWithObjects:
-							 NSURLLocalizedNameKey, NSURLEffectiveIconKey, nil];
-	NSArray *volumeURLs = [[NSFileManager defaultManager]
-						   mountedVolumeURLsIncludingResourceValuesForKeys:resourceKeys
-						   options:0];
-	NSURL *curvol;
-	NSEnumerator *iterator = [volumeURLs objectEnumerator];
-	
-	while (curvol = [iterator nextObject])
+	int volumeIndex, result = noErr;
+
+	for (volumeIndex = 1; result == noErr || result != nsvErr; volumeIndex++)
 	{
-		NSString *displayName = [[NSFileManager defaultManager] displayNameAtPath:[curvol path]];
-		if ([displayName isEqual:@"Kindle"])
+		FSVolumeRefNum  actualVolume;
+		HFSUniStr255    volumeName;
+		FSVolumeInfo    volumeInfo;
+		FSRef           volumeFSRef;
+		
+		bzero((void *) &volumeInfo, sizeof(volumeInfo));
+		
+		// Get the volume info, which includes the filesystem ID.
+		result = FSGetVolumeInfo(kFSInvalidVolumeRefNum,
+								 volumeIndex,
+								 &actualVolume,
+								 kFSVolInfoFSInfo,
+								 &volumeInfo,
+								 &volumeName,
+								 &volumeFSRef); 
+		
+		NSString *volNameStr = [NSString stringWithCharacters:volumeName.unicode length:volumeName.length];
+		if ([volNameStr isEqualToString:@"Kindle"])
 		{
-			kindlePath = [curvol path];
+			NSURL *url = [(NSURL *)CFURLCreateFromFSRef(NULL, &volumeFSRef) autorelease];
+			NSString *path = [url path];
+			kindlePath = path;
 			break;
 		}
 	}
-	
+
 	if (kindlePath)
 	{
 		NSLog(@"Found the Kindle: %@\n", kindlePath);

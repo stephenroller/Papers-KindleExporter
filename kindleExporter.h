@@ -1,4 +1,5 @@
 #import <Cocoa/Cocoa.h>
+#import <CoreServices/CoreServices.h>
 #import "JSON/Classes/JSON.h"
 #import "PapersExporterPluginProtocol.h"
 
